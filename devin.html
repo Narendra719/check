@@ -584,6 +584,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
      <script>
+		 window.onload = function () {
+            // Initially show only the first section and hide the second section
+            document.getElementById("section1").style.display = "block";
+            document.getElementById("section2").style.display = "none";
+         };
+
          document.getElementById("scrollButton").addEventListener("click", () => {
          document.getElementById("section2").scrollIntoView({ behavior: "smooth" });
           });
